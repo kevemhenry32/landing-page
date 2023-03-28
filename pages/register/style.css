@@ -1,0 +1,277 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #f9faff;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  position: relative;
+  width: 1368px;
+  height: 100%;
+
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "a b";
+}
+
+form {
+  grid-area: a;
+  width: 850px;
+  margin-top: 85px;
+  padding-inline: 103px 99px;
+}
+
+.right {
+  bottom: -120px;
+  position: relative;
+  left: -132px;
+  width: 631px;
+  height: 876px;
+}
+
+.member span {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 11px;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+  letter-spacing: 0.25px;
+  color: #4743e0;
+}
+
+form header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 59px;
+  padding-bottom: 48px;
+  border-bottom: 1px dashed #d1d1d1;
+  margin-bottom: 42px;
+}
+
+form header h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+}
+
+form header p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  letter-spacing: 0.25px;
+
+  color: #404040;
+
+  opacity: 0.99;
+}
+
+form header p span {
+  color: #4743e0;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 42px;
+  margin-bottom: 31px;
+  border-bottom: 1px dashed #d1d1d1;
+}
+
+.input-group .input-wrapper:nth-child(1) input,
+.input-group .input-wrapper:nth-child(2) input {
+  margin-bottom: 27px;
+}
+
+.input-group .input-wrapper:nth-child(3) input,
+.input-group .input-wrapper:nth-child(4) input {
+  margin-bottom: 39px;
+}
+.input-wrapper {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c c";
+  align-items: center;
+}
+
+.input-wrapper label {
+  grid-area: a;
+  font-size: 12px;
+  line-height: 28px;
+  /* or 233% */
+
+  letter-spacing: 0.25px;
+
+  color: #333333;
+}
+
+.input-wrapper img {
+  grid-area: b;
+  justify-self: end;
+  width: 16px;
+  height: 16px;
+}
+
+.input-wrapper input {
+  grid-area: c;
+  outline: none;
+  width: 300px;
+  height: 48px;
+  padding-left: 17px;
+  border: 1px solid #d1d1d1;
+  background: #ffffff;
+}
+
+.radio {
+  padding-bottom: 38px;
+  margin-bottom: 38px;
+  border-bottom: 1px dashed #d1d1d1; /*#d1d1d1*/
+}
+.radio input[type="radio"] {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.input-wrapper-radio {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.radio-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.radio span {
+  font-size: 12px;
+  line-height: 28px;
+
+  letter-spacing: 0.25px;
+
+  color: #333333;
+}
+.radio span > span {
+  opacity: 0.34;
+}
+
+.radio label {
+  display: flex;
+  width: 68.1px;
+  height: 48px;
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d1d1d1;
+
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+  letter-spacing: 0.25px;
+}
+
+input[type="radio"]:checked + label {
+  border: 1px solid #4743e0;
+  box-shadow: 0px 0px 14px rgba(71, 67, 224, 0.2);
+  color: #4743e0;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.input-phone {
+  height: 48px;
+  display: flex;
+  width: 300px;
+}
+.input-phone #ddi {
+  width: 85px;
+  outline: none;
+  border: 1px solid #d1d1d1;
+  padding-left: 17px;
+}
+
+.input-phone #ddi::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input-phone #phone {
+  outline: none;
+  border: 1px solid #d1d1d1;
+  padding-left: 20px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 87px;
+}
+
+footer .terms {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .terms input {
+  width: 24px;
+  height: 24px;
+  accent-color: #4743e0;
+}
+
+footer .terms label {
+  font-size: 14px;
+
+  /* or 200% */
+  letter-spacing: 0.25px;
+
+  color: #404040;
+}
+
+footer .terms label a {
+  color: #4743e0;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 102px;
+  height: 48px;
+  background: #4743e0;
+
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  div.container {
+    display: block;
+  
+  }
+}

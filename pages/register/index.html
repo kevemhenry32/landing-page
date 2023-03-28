@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="member">
+                <span>
+                    Allready a member?
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 0C10.21 0 12 1.79 12 4C12 6.21 10.21 8 8 8C5.79 8 4 6.21 4 4C4 1.79 5.79 0 8 0ZM8 16C8 16 16 16 16 14C16 11.6 12.1 9 8 9C3.9 9 0 11.6 0 14C0 16 8 16 8 16Z"
+                            fill="#4743E0" />
+                    </svg>
+                </span>
+            </div>
+
+            <header>
+                <h1>Input your information</h1>
+                <p>We need you to help us with some basic information for your account creation. Here are our <span>
+                        terms and conditins.
+                    </span> Please
+                    read them carefully. We are GDRP compliiant</p>
+            </header>
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <label for="firstName">First name</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="firstName" type="text" placeholder="John" name="fistName" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="lastName">Last name</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="lastName" type="text" placeholder="Smit" name="lastName" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="company">Company</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="company" type="text" placeholder="John Smith" name="company" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Work email</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="email" type="email" placeholder="John@smith.com" name="email" required>
+                </div>
+                <div class="radio">
+                    <div class="radio-title">
+                        <span>Number of employees<span> (optional)</span></span>
+                        <img src="../../assets/img/form.png" alt="">
+                    </div>
+
+                    <div class="input-wrapper-radio">
+                        <div>
+                            <input type="radio" id="employees-0-10" name="employees" value="0-10">
+                            <label for="employees-0-10">
+                                <div class="radio-btn">0 < 20</div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="employees-20-50" name="employees" value="20-50">
+                            <label for="employees-20-50">
+                                <div class="radio-btn">20 < 50</div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="employees-50-100" name="employees" value="50-100">
+                            <label for="employees-50-100">
+                                <div class="radio-btn">50 < 100</div>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="employees-100" name="employees" value="100">
+                            <label for="employees-100">
+                                <div class="radio-btn">100 < ...</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="radio">
+                    <div class="radio-title">
+                        <span>
+                            Phone number <span>(optional)</span>
+                        </span>
+                        <img src="../../assets/img/form.png" alt="">
+                    </div>
+                    <div class="input-phone">
+                        <input type="number" list="list-ddi" name="ddi" placeholder="+000" id="ddi">
+                        <input type="text" name="phone" placeholder="00 000 000" id="phone">
+                    </div>
+
+                    <datalist id="list-ddi">
+                        <option value="55">Brasil</option>
+                        <option value="225">
+                        <option value="506">
+                        <option value="385">
+                    </datalist>
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="password" type="password" name="password" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="password-confirm">Confirm password</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="password-confirm" type="password" name="password-confirm" required>
+                </div>
+            </div>
+            <footer>
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">
+                        I agree with
+                        <a href="#"> terms and conditins.</a>
+                    </label>
+                </div>
+                <button type="submit">Register</button>
+            </footer>
+        </form>
+        <img src="../../assets/img/register.png" alt="" class="right">
+
+    </div>
+</body>
+
+</html>

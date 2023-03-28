@@ -1,0 +1,153 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #f9faff;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto auto;
+}
+
+.main {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-top: 114px;
+}
+
+.main h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+  margin-bottom: 28px;
+}
+
+.main p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #404040;
+
+  opacity: 0.99;
+}
+
+.main p:nth-child(3) {
+  margin-top: 90px;
+}
+
+.container-loader {
+  margin-top: 17px;
+  margin-bottom: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  position: relative;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  transform: rotate(50deg);
+  inset: -1px;
+  border-radius: 50%;
+  border: 2px solid #4743e0;
+  animation: prixClipFix 5s infinite linear;
+}
+
+#cron {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #4743e0;
+}
+
+.main strong {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #4743e0;
+
+  margin-bottom: 77px;
+}
+
+.main button {
+  display: block;
+  width: 102px;
+  height: 48px;
+  border: none;
+  background: #4743e0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.left {
+  float: right;
+}
+
+.right {
+  float: left;
+}
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}

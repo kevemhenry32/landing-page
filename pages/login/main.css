@@ -1,0 +1,143 @@
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-areas: "a b";
+}
+
+form {
+  grid-area: a;
+  width: 412px;
+}
+form .form {
+  padding: 168px 22px 0 90px;
+}
+form header {
+  padding-bottom: 43px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #d1d1d1;
+}
+form header h1 {
+  font-size: 54px;
+  line-height: 68px;
+  margin-bottom: 24px;
+}
+form header p {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #404040;
+  opacity: 0.99;
+}
+form .container-form {
+  padding-bottom: 46px;
+  border-bottom: 1px dashed #d1d1d1;
+  margin-bottom: 47px;
+}
+form .container-form .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .container-form .label span {
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #333333;
+}
+form .container-form .label img {
+  width: 16px;
+  height: 16px;
+}
+form .container-form .input-group {
+  margin-bottom: 15px;
+}
+form .container-form .input-group .input-box {
+  height: 48px;
+  border: 1px solid #d1d1d1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+form .container-form .input-group .input-box:first-child {
+  border-bottom: none; /*verificar*/
+}
+form .container-form .input-group .input-box img {
+  width: 16px;
+  height: 16px;
+  margin-left: 14px;
+}
+form .container-form .input-group .input-box input {
+  width: 100%;
+  height: 100%;
+}
+form .container-form .forgot a {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #4743e0;
+}
+form .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 238px;
+}
+form .btn .check {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+form .btn .check input {
+  width: 24px;
+  height: 24px;
+  accent-color: #4743e0;
+}
+form .btn .check label {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #333333;
+}
+form .btn > button {
+  width: 102px;
+  height: 48px;
+  background: #4743e0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+form footer span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #333333;
+  opacity: 0.3;
+}
+form footer a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #4743e0;
+}
+
+.right {
+  grid-area: b;
+}/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 600px) {
+  div.container {
+    display: block;
+  }
+}

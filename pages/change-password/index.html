@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+            <header>
+                <h1>Change password</h1>
+                <p>Input your new desired password in the input fields below to create a new password. We strongly
+                    advise you to store it
+                    safely.</p>
+            </header>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="password">New password</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="password" type="password" required oninput="setColor()" autocomplete="off">
+                </div>
+                <div class="progress">
+                    <span class="progress1"></span>
+                    <span class="progress1"></span>
+                    <span class="progress1"></span>
+                    <span class="progress1"></span>
+                    <span class="progress2"></span>
+                    <span class="progress2"></span>
+                    <span class="progress2"></span>
+                    <span class="progress2"></span>
+                    <span class="progress3"></span>
+                    <span class="progress3"></span>
+                    <span class="progress3"></span>
+                    <span class="progress3"></span>
+                </div>
+                <div class="input-box">
+                    <label for="confirmpassword">Confirm new password</label>
+                    <img src="../../assets/img/form.png" alt="">
+                    <input id="confirmpassword" type="password" required autocomplete="off">
+                </div>
+            </div>
+            <div class="btn">
+                <button>Change password</button>
+            </div>
+            <footer>
+                <span>Do you need help?</span>
+                <a href="#">Customer support</a>
+            </footer>
+        </form>
+        <img src="../../assets/img/change-password.png" class="img-back" alt="">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

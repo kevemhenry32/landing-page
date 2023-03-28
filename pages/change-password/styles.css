@@ -1,0 +1,138 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.container .img-back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.container form {
+  max-width: 480px;
+  padding-top: 170px;
+  padding-inline: 98px 88px;
+  background-color: #fff;
+}
+.container header {
+  padding-bottom: 34px;
+  margin-bottom: 44px;
+  border-bottom: 1px dashed #d1d1d1;
+}
+.container header h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 68px;
+  color: #42505c;
+  margin-bottom: 34px;
+}
+
+.container header p {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+
+  color: #404040;
+
+  opacity: 0.99;
+}
+
+form .input-group {
+  padding-bottom: 46px;
+  margin-bottom: 39px;
+  border-bottom: 1px dashed #d1d1d1;
+}
+
+form .input-box {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c c";
+  align-items: center;
+}
+
+form label {
+  grid-area: a;
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+
+  color: #333333;
+}
+
+form img {
+  grid-area: b;
+  justify-self: end;
+}
+
+form input {
+  grid-area: c;
+  width: 100%;
+  height: 48px;
+  padding-left: 10px;
+  border: 1px solid #d1d1d1;
+}
+
+.progress {
+  margin-block: 7px 39px;
+  display: flex;
+  gap: 1px;
+}
+
+.progress span {
+  display: block;
+  width: 24px;
+  height: 6px;
+  background-color: #eaeaea;
+}
+
+.container .btn button {
+  width: 100%;
+  height: 48px;
+  background: #4743e0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #ffffff;
+  cursor: pointer;
+
+  margin-bottom: 78px;
+}
+
+.container footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 35px;
+}
+
+.container footer span {
+  line-height: 28px;
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #333333;
+
+  opacity: 0.3;
+}
+
+.container footer a {
+  font-size: 14px;
+  line-height: 28px;
+  /* or 200% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #4743e0;
+}
